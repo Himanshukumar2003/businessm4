@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item:hover{
+  opacity: 50%;
+}
+
+
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+
+
+.Paralla, .ParallaTwo{
+  height: 800px !important;
+}
+.links{
+  padding: .5rem;
+  display: inline-flex;
+  font-weight: 400;
+  align-items: center;
+  position: relative;
+  gap: 2px;
+  transition: all .3s; 
+  color: #ff4f7b;
+  cursor: pointer;
+  transition: 0.5s all;
+
+}
+
+.card{
+  cursor: pointer;
+}
+
+.links:hover {
+  filter: brightness(85%);
+  color: #ff0242;
+
+
+}
+
+
+
+.menuHeading{
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+h1 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+h2{
+  font-weight: 300;
+  font-size: 21px;
+
+}
+
+h3{
+  font-weight: 200;
+  color: #8d97ad;
+  font-size: 1rem;
+}
+
+
+.dropDown {
+  display: inline-block;
+  position: relative; 
+  z-index: 9999;
+  
+}
+
+.dropDownList {
+  display: none;
+  position: absolute;
+  transition: opacity 0.3s ease-in-out, display 0s 0.3s; 
+} 
+.dropDownText:hover{
+opacity: 50%;
+}
+.dropDown:hover .dropDownList{
+  display: block; 
+  opacity: 1; 
+  transition: opacity 0.3s ease-in-out;
+}
+.dropDownList:hover {
+  display: block; 
+  opacity: 1; 
+  transition: opacity 0.3s ease-in-out;
+} 
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer !important;
+  background-color: #ff4f7b;
+  color: white;
+  font-weight: 500;
+  transition: 0.8s all !important;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+
+}
+
+.btn:hover {
+  background-color: #ff0242 !important;
+  border-color: #ff0242 !important;
+  transition: 0.8s all;
+
+}
+
+.btn-icon {
+  transition: 0.5s all;
+
+  opacity: 0;
+  display: none;
+  z-index: 1;
+} 
+
+.btn:hover .btn-icon {
+  opacity: 1;
+  transition: 0.5s all;
+
+  display: block !important;
+}
+
+.btnTwo {
+  display: flex;
+  align-items: center;
+  transition: 0.5s all;
+
+  gap: 10px;
+  cursor: pointer;
+  background-color: #333333 !important;
+  border-color: #333333 !important;
+  color: white;
+  font-weight: 500;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.5s ease;
+  margin-bottom: 10px;
+}
+
+.btnTwo:hover {
+  background-color: #050505 !important;
+  border-color: #050505 !important;
+  transition: 0.8s all;
+
+}
+
+.btnTwo .btn-icon {
+  opacity: 0;
+  transition: 0.8s all;
+}
+
+.btnTwo:hover .btn-icon {
+  opacity: 1;
+  transition: 0.8s all;
+
+  display: block ;
+
+}
+
+
+
+
+
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icons{
+  cursor: pointer;
+  padding: 0px 12px;
+  transition: 0.5s all;
+}
+
+.icons:hover{
+  border-radius: 50%;
+  background-color: #cbcccf;
+  color: #ff4f7b;
+}
+
+
+
+/* sndpage */
+.heading{
+font-size: 2rem;
+font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .ParallaTwo{
+    height: 1400px !important;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .ParallaTwo{
+    height: 1200px !important;
+  }
+}
+
